@@ -10,4 +10,5 @@ $game->addPlayer(new \Dart\Player("Tyrion Lannister"));
 
 $game->play();
 
-$game->printResults(new \Dart\Utils\ConsoleScoreboardPrinter());
+$resultsPrinter = new \Dart\Utils\ConsoleScoreboardPrinter();
+$resultsPrinter->print($game->getScoreboard());

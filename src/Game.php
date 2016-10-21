@@ -49,9 +49,12 @@ class Game
         }
     }
 
-    public function printResults(ScoreboardPrinterInterface $printer)
+    /**
+     * @return Scoreboard
+     */
+    public function getScoreboard()
     {
-        $printer->print($this->scoreboard);
+        return $this->scoreboard;
     }
 
     private function validatePlayers()
